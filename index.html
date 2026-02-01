@@ -118,16 +118,16 @@
   color: #555;
 }
 
-/* Samakan tinggi card */
+/* Card tetap rapi */
 .service-card {
   height: 100%;
-  display: flex;
+  border-radius: 18px;
+  word-break: normal;
 }
 
 .service-card .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 /* Judul */
@@ -136,37 +136,33 @@
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 6px;
-  word-break: normal;
 }
 
-/* Deskripsi dipotong rapi */
+/* Deskripsi FULL tampil */
 .service-card p {
   font-size: 11px;
-  line-height: 1.4;
+  line-height: 1.45;
   color: #555;
   margin-bottom: 0;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 4;   /* maksimal 4 baris */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  white-space: normal;
+  overflow: visible;
 }
 
-/* Fix kata kepotong */
-.service-card {
-  word-break: keep-all;
+/* Icon */
+.service-icon {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd, #084298);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Icon diperkecil sedikit di HP */
-@media (max-width: 576px) {
-  .service-icon {
-    width: 42px;
-    height: 42px;
-  }
-
-  .service-icon i {
-    font-size: 17px;
-  }
+.service-icon i {
+  color: #fff;
+  font-size: 17px;
 }
 
 
