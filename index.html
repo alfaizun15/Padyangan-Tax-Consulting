@@ -6,6 +6,8 @@
   <title>Padyangan Tax Consulting</title>
   <link rel="icon" type="image/png" sizes="32x32" href="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-05-28-at-08.29.26_a82e62bf.jpg">
   <link rel="apple-touch-icon" href="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2024/08/WhatsApp-Image-2024-05-28-at-08.29.26_a82e62bf.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -77,6 +79,43 @@
 
 .service-card p {
   font-size: 12px;
+}
+
+.service-card {
+  border-radius: 18px;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd, #084298);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.service-card h5 {
+  font-size: clamp(13px, 2.5vw, 18px);
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 12px;
+  margin-bottom: 0;
+  color: #555;
 }
 
 
@@ -193,63 +232,90 @@
       <h2 class="fw-bold">Layanan Kami</h2>
       <p>Solusi komprehensif untuk kebutuhan bisnis Anda</p>
     </div>
+
     <div class="row g-3">
+      <!-- 1 -->
       <div class="col-4 col-md-4" data-aos="zoom-in">
-        <div class="card service-card h-100 shadow-sm">
+        <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
-            <h5>Konsultasi Pajak</h5>
-            <p>Perencanaan pajak, kepatuhan SPT, dan pendampingan pemeriksaan.</p>
+            <div class="service-icon mb-3">
+              <i class="fa-solid fa-file-invoice-dollar"></i>
+            </div>
+            <h5 class="fw-bold">TAX AUDIT ASSISTANCE</h5>
+            <p>Mendampingi klien ketika dilakukan pemeriksaan pajak, konseling, keberatan dan banding pajak.</p>
           </div>
         </div>
       </div>
 
+      <!-- 2 -->
       <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card service-card h-100 shadow-sm">
+        <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
-            <h5>Manajemen & Bisnis</h5>
-            <p>Optimalisasi sistem keuangan dan strategi bisnis perusahaan.</p>
+            <div class="service-icon mb-3">
+              <i class="fa-solid fa-magnifying-glass-chart"></i>
+            </div>
+            <h5 class="fw-bold">KUASA HUKUM PAJAK</h5>
+            <p>Identifikasi risiko dan kepatuhan pajak.</p>
           </div>
         </div>
       </div>
 
+      <!-- 3 -->
+      <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card service-card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <div class="service-icon mb-3">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h5>Manajemen Bisnis</h5>
+            <p>Optimalisasi strategi dan keuangan.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-4 col-md-4" data-aos="zoom-in">
+        <div class="card service-card h-100 shadow-sm text-center">
+          <div class="card-body">
+            <div class="service-icon mb-3">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h5>Keuangan</h5>
+            <p>Analisis laporan dan arus kas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
       <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card service-card h-100 shadow-sm">
+        <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
-            <h5>Manajemen & Bisnis</h5>
-            <p>Optimalisasi sistem keuangan dan strategi bisnis perusahaan.</p>
+            <div class="service-icon mb-3">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <h5>Kepatuhan Hukum</h5>
+            <p>Pendampingan regulasi & legalitas.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card service-card h-100 shadow-sm">
+      <!-- 6 -->
+      <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
-            <h5>Manajemen & Bisnis</h5>
-            <p>Optimalisasi sistem keuangan dan strategi bisnis perusahaan.</p>
+            <div class="service-icon mb-3">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h5>Pendampingan</h5>
+            <p>Konsultasi berkelanjutan.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card service-card h-100 shadow-sm">
-          <div class="card-body">
-            <h5>Manajemen & Bisnis</h5>
-            <p>Optimalisasi sistem keuangan dan strategi bisnis perusahaan.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card service-card h-100 shadow-sm">
-          <div class="card-body">
-            <h5>Manajemen & Bisnis</h5>
-            <p>Optimalisasi sistem keuangan dan strategi bisnis perusahaan.</p>
-          </div>
-        </div>
-      </div>
-
+    </div>
   </div>
 </section>
+
 
 <!-- Kenapa Kami -->
 <section id="why">
