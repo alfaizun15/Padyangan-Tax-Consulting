@@ -265,6 +265,52 @@
   }
 }
 
+.why-section {
+  padding: 90px 0;
+}
+
+.why-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+.why-item i {
+  font-size: 22px;
+  color: #0d6efd;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.why-item h6 {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.why-item p {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* image */
+.why-img {
+  max-width: 100%;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .why-section {
+    padding: 60px 0;
+  }
+
+  .why-item p {
+    font-size: 15px;
+  }
+}
+
+
   </style>
 </head>
 <body>
@@ -374,8 +420,6 @@
     </div>
   </div>
 </section>
-
-
 
 
 <!-- Layanan -->
@@ -490,27 +534,87 @@
 
 
 <!-- Kenapa Kami -->
-<section id="why">
+<section id="why" class="why-section">
   <div class="container">
+
     <div class="text-center mb-5" data-aos="fade-up">
       <h2 class="fw-bold">Kenapa Memilih Kami</h2>
-      <p>Keunggulan yang membuat klien mempercayakan kami</p>
+      <p class="text-muted">
+        Keunggulan profesional yang membuat klien mempercayakan kebutuhan perpajakannya
+      </p>
     </div>
-    <div class="row g-4">
-      <div class="col-md-6" data-aos="fade-right">
-        <ul class="list-unstyled">
-          <li class="mb-3">✔ Konsultan pajak bersertifikat & berpengalaman</li>
-          <li class="mb-3">✔ Pendekatan profesional dan solutif</li>
-          <li class="mb-3">✔ Patuh terhadap regulasi perpajakan</li>
-          <li class="mb-3">✔ Kerahasiaan data klien terjamin</li>
-        </ul>
+
+    <div class="row align-items-center gy-4">
+
+      <!-- CONTENT -->
+      <div class="col-12 col-md-6"
+           data-aos="fade-right"
+           data-aos-duration="900">
+
+        <div class="why-item">
+          <i class="fa-solid fa-user-tie"></i>
+          <div>
+            <h6>Konsultan Bersertifikat</h6>
+            <p>
+              Didukung oleh tenaga ahli bersertifikat dan berpengalaman
+              lebih dari 20 tahun di bidang perpajakan.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <div>
+            <h6>Pendekatan Profesional & Solutif</h6>
+            <p>
+              Setiap permasalahan ditangani secara objektif, sistematis,
+              dan sesuai ketentuan hukum yang berlaku.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <i class="fa-solid fa-file-shield"></i>
+          <div>
+            <h6>Kepatuhan Regulasi</h6>
+            <p>
+              Seluruh layanan dilaksanakan sesuai dengan peraturan
+              perpajakan dan standar profesional.
+            </p>
+          </div>
+        </div>
+
+        <div class="why-item">
+          <i class="fa-solid fa-lock"></i>
+          <div>
+            <h6>Kerahasiaan Terjamin</h6>
+            <p>
+              Kerahasiaan data dan informasi klien dijaga secara ketat
+              sebagai bagian dari etika profesi.
+            </p>
+          </div>
+        </div>
+
       </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <img src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2024/09/IMG_0237-scaled.jpg" class="img-fluid rounded-4 shadow" alt="Why Choose Us">
+
+      <!-- IMAGE -->
+      <div class="col-12 col-md-6 text-center"
+           data-aos="fade-left"
+           data-aos-duration="900">
+        <div class="why-img-wrap">
+          <img
+            src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2024/09/IMG_0237-scaled.jpg"
+            class="img-fluid rounded-4 shadow why-img"
+            alt="Why Choose Padyangan"
+            loading="lazy"
+          >
+        </div>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- Galeri -->
 <section id="gallery" class="bg-white">
