@@ -74,19 +74,21 @@
     .service-card:hover { transform: translateY(-6px); transition: .3s; }
 
     .service-card {
+  height: 100%;
   border-radius: 18px;
-  transition: all 0.3s ease;
 }
 
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+.service-card .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
 }
 
+/* Icon */
 .service-icon {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10px;
   border-radius: 50%;
   background: linear-gradient(135deg, #0d6efd, #084298);
   display: flex;
@@ -96,70 +98,27 @@
 
 .service-icon i {
   color: #fff;
-  font-size: 20px;
-}
-
-.service-card h5 {
-  font-size: clamp(13px, 2.5vw, 18px);
-  font-weight: 600;
-}
-
-.service-card p {
-  font-size: 12px;
-  margin-bottom: 0;
-  color: #555;
-}
-
-/* Samakan tinggi card */
-.service-card {
-  height: 100%;
-  display: flex;
-}
-
-.service-card .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  font-size: 18px;
 }
 
 /* Judul */
 .service-card h5 {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 6px;
-  word-break: normal;
+  text-align: center;
 }
 
-/* Deskripsi dipotong rapi */
+/* Deskripsi */
 .service-card p {
-  font-size: 11px;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 1.45;
   color: #555;
   margin-bottom: 0;
-
-  display: -webkit-box;
-  -webkit-line-clamp: 4;   /* maksimal 4 baris */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  text-align: center;
 }
 
-/* Fix kata kepotong */
-.service-card {
-  word-break: keep-all;
-}
-
-/* Icon diperkecil sedikit di HP */
-@media (max-width: 576px) {
-  .service-icon {
-    width: 42px;
-    height: 42px;
-  }
-
-  .service-icon i {
-    font-size: 17px;
-  }
-}
 
 
     /* Partner */
@@ -276,81 +235,100 @@
       <p>Solusi komprehensif untuk kebutuhan bisnis Anda</p>
     </div>
 
-    <div class="row g-3">
+    <div class="row g-4">
+
       <!-- 1 -->
-      <div class="col-4 col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
         <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
             <div class="service-icon mb-3">
               <i class="fa-solid fa-file-invoice-dollar"></i>
             </div>
-            <h5>Konsultasi Pajak</h5>
-            <p>Perencanaan pajak dan kepatuhan SPT.</p>
+            <h5>Tax Audit Assistance</h5>
+            <p>
+              Mendampingi klien ketika dilakukan pemeriksaan pajak,
+              konseling, keberatan, dan banding pajak.
+            </p>
           </div>
         </div>
       </div>
 
       <!-- 2 -->
-      <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
         <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
             <div class="service-icon mb-3">
-              <i class="fa-solid fa-magnifying-glass-chart"></i>
+              <i class="fa-solid fa-scale-balanced"></i>
             </div>
-            <h5>Review & Audit</h5>
-            <p>Identifikasi risiko dan kepatuhan pajak.</p>
+            <h5>Kuasa Hukum Pajak</h5>
+            <p>
+              Pendampingan hukum pajak dalam sengketa (dispute),
+              keberatan, hingga proses di pengadilan pajak.
+            </p>
           </div>
         </div>
       </div>
 
       <!-- 3 -->
-      <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
         <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
             <div class="service-icon mb-3">
               <i class="fa-solid fa-briefcase"></i>
             </div>
             <h5>Manajemen Bisnis</h5>
-            <p>Optimalisasi strategi dan keuangan.</p>
+            <p>
+              Optimalisasi strategi bisnis dan sistem keuangan
+              untuk meningkatkan kinerja perusahaan.
+            </p>
           </div>
         </div>
       </div>
 
       <!-- 4 -->
-      <div class="col-4 col-md-4" data-aos="zoom-in">
+      <div class="col-6 col-md-4" data-aos="zoom-in">
         <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
             <div class="service-icon mb-3">
               <i class="fa-solid fa-chart-line"></i>
             </div>
             <h5>Keuangan</h5>
-            <p>Analisis laporan dan arus kas.</p>
+            <p>
+              Analisis laporan keuangan dan pengelolaan arus kas
+              secara profesional dan terukur.
+            </p>
           </div>
         </div>
       </div>
 
       <!-- 5 -->
-      <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="100">
         <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
             <div class="service-icon mb-3">
               <i class="fa-solid fa-scale-balanced"></i>
             </div>
             <h5>Kepatuhan Hukum</h5>
-            <p>Pendampingan regulasi & legalitas.</p>
+            <p>
+              Pendampingan regulasi dan legalitas usaha agar
+              sesuai dengan ketentuan yang berlaku.
+            </p>
           </div>
         </div>
       </div>
 
       <!-- 6 -->
-      <div class="col-4 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="col-6 col-md-4" data-aos="zoom-in" data-aos-delay="200">
         <div class="card service-card h-100 shadow-sm text-center">
           <div class="card-body">
             <div class="service-icon mb-3">
               <i class="fa-solid fa-handshake"></i>
             </div>
             <h5>Pendampingan</h5>
-            <p>Konsultasi berkelanjutan.</p>
+            <p>
+              Konsultasi berkelanjutan untuk mendukung
+              pertumbuhan dan kepatuhan bisnis Anda.
+            </p>
           </div>
         </div>
       </div>
@@ -358,6 +336,7 @@
     </div>
   </div>
 </section>
+
 
 
 <!-- Kenapa Kami -->
