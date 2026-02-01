@@ -166,6 +166,105 @@
       border-radius: 18px;
       background: #f8fafc;
     }
+
+    .about-section {
+  padding: 90px 0;
+  background: #ffffff;
+}
+
+/* Badge kecil */
+.about-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #0d6efd;
+  background: rgba(13, 110, 253, 0.1);
+  border-radius: 30px;
+  margin-bottom: 12px;
+}
+
+/* Lead text */
+.about-lead {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* List */
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #555;
+}
+
+.about-list i {
+  color: #0d6efd;
+  margin-top: 4px;
+}
+
+/* Image wrapper */
+.about-image {
+  position: relative;
+}
+
+/* Experience floating box */
+.experience-box {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: #0d6efd;
+  color: #fff;
+  padding: 18px 20px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.experience-box h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.experience-box span {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Desktop font scaling */
+@media (min-width: 992px) {
+  .about-lead {
+    font-size: 16px;
+  }
+
+  .about-list li {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .experience-box {
+    bottom: 10px;
+    left: 10px;
+    padding: 14px;
+  }
+
+  .experience-box h3 {
+    font-size: 22px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -219,23 +318,53 @@
 </section>
 
 <!-- Tentang Kami -->
-<section id="about">
+<section id="about" class="about-section">
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center g-5">
+
+      <!-- TEXT -->
       <div class="col-md-6" data-aos="fade-right">
-        <h2 class="fw-bold mb-3">Tentang Kami</h2>
-        <p>Padyangan Tax Consulting</p>
-        <p>Kami adalah perusahaan jasa di bidang perpajakan dan akuntansi. Didirikan untuk  memenuhi kebutuhan para wajib pajak dan pebisnis yang memerlukan jasa di bidang perpajakan dan akuntansi  secara comprehensive. </p>
-        <p>Dibentuk oleh 3 (tiga) orang yang merupakan suatu tim yang telah mempunyai pengalaman selama lebih dari 20 tahun di bidang Perpajakan dan Tax Audit.</p>
-        <p>Berpengalaman menangani beberapa klien dari berbagai skala baik besar maupun kecil seperti perusahaan Multinasional, Perusahaan Milik Asing , serta berpengalaman menangani kasus-kasus tertentu, seperti keberatan, banding dan lainnya</p>
+        <span class="about-badge">Tentang Kami</span>
+        <h2 class="fw-bold mb-4">
+          Padyangan <span class="text-primary">Tax Consulting</span>
+        </h2>
+
+        <p class="about-lead">
+          Perusahaan jasa profesional di bidang <strong>perpajakan dan akuntansi</strong>
+          yang hadir untuk memberikan solusi komprehensif bagi wajib pajak dan pelaku usaha.
+        </p>
+
+        <ul class="about-list">
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            Tim berpengalaman lebih dari <strong>20 tahun</strong> di bidang perpajakan dan tax audit.
+          </li>
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            Menangani klien skala kecil hingga perusahaan multinasional dan PMA.
+          </li>
+          <li>
+            <i class="fa-solid fa-check-circle"></i>
+            Berpengalaman dalam kasus keberatan, banding, dan sengketa pajak.
+          </li>
+        </ul>
       </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <img src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2024/08/PTC-Family-scaled.jpg" class="img-fluid rounded-4 shadow" alt="About">
+
+      <!-- IMAGE -->
+      <div class="col-md-6 position-relative" data-aos="fade-left">
+        <div class="about-image">
+          <img 
+            src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2024/08/PTC-Family-scaled.jpg"
+            alt="Padyangan Tax Consulting"
+            class="img-fluid rounded-4 shadow"
+          >
+        </div>
       </div>
+
     </div>
-    
   </div>
 </section>
+
 
 <!-- Layanan -->
 <section id="services" class="bg-light">
