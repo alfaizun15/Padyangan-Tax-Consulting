@@ -131,6 +131,71 @@
   }
 }
 
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.65);
+  margin-bottom: 14px;
+}
+
+.hero-title {
+  font-size: 46px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-size: 17px;
+  line-height: 1.75;
+  color: rgba(255,255,255,.85);
+  max-width: 520px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+/* buttons */
+.hero-btn-primary {
+  background: #ffd43b;
+  color: #111;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.hero-btn-secondary {
+  border: 1px solid rgba(255,255,255,.4);
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.hero-btn-secondary:hover {
+  background: rgba(255,255,255,.08);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-desc {
+    font-size: 15.5px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+}
+
 
     /* Service */
     .service-card:hover { transform: translateY(-6px); transition: .3s; }
@@ -398,8 +463,8 @@
         <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
         <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
          <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
-        <li class="nav-item"><a class="nav-link" href="#partner">Informasi</a></li>
         <li class="nav-item"><a class="nav-link" href="#location">Lokasi</a></li>
+         <li class="nav-item"><a class="nav-link" href="#partner">Informasi</a></li>
       </ul>
     </div>
   </div>
@@ -410,25 +475,35 @@
   <div class="container">
     <div class="row align-items-center gy-4">
 
-      <!-- TEXT CONTENT -->
+      <!-- TEXT -->
       <div class="col-12 col-md-6"
            data-aos="fade-right"
            data-aos-duration="900">
 
-        <h1 class="fw-bold mb-3">
-          Solusi <span>Pajak & Manajemen</span><br>
-          untuk Keberlanjutan Bisnis Anda
+        <span class="hero-eyebrow">
+          Tax & Business Consulting
+        </span>
+
+        <h1 class="hero-title">
+          Solusi Terpercaya untuk
+          <span>Pajak & Manajemen</span>
+          Bisnis Anda
         </h1>
 
-        <p class="mb-4">
-          Pendampingan profesional dalam kepatuhan perpajakan,
-          perencanaan yang efisien, serta pengamanan bisnis
-          sesuai regulasi perpajakan Indonesia.
+        <p class="hero-desc">
+          Kami mendampingi perusahaan dalam pengelolaan perpajakan,
+          kepatuhan regulasi, dan pengambilan keputusan strategis
+          secara profesional dan berkelanjutan.
         </p>
 
-        <a href="#contact" class="btn btn-warning btn-lg px-4">
-          Konsultasi Sekarang
-        </a>
+        <div class="hero-actions">
+          <a href="#contact" class="btn hero-btn-primary">
+            Konsultasi
+          </a>
+          <a href="#about" class="btn hero-btn-secondary">
+            Tentang Kami
+          </a>
+        </div>
 
       </div>
 
@@ -436,19 +511,18 @@
       <div class="col-12 col-md-6 text-center hero-image"
            data-aos="fade-left"
            data-aos-duration="900">
-
         <img
           src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2019/03/chart-service.png"
-          alt="Tax & Business Consulting"
+          alt="Professional Tax Consulting"
           class="img-fluid"
           loading="lazy"
         >
-
       </div>
 
     </div>
   </div>
 </section>
+
 
 
 <!-- Tentang Kami -->
@@ -740,22 +814,10 @@
 
 </section>
 
-<!-- Informasi -->
-<section id="partner" class="bg-white">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4" data-aos="fade-up">Informasi Sosial Media</h2>
-    <div class="row justify-content-center g-4">
-      <div class="col-4 col-md-2" data-aos="zoom-in"><img src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2026/01/Biru-Putih-Modern-Memulai-Bisnis-Instagram-Post-Carousel.jpg" class="img-fluid rounded-4 shadow"></div>
-      <div class="col-4 col-md-2" data-aos="zoom-in"><img src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-29-at-12.06.57.jpeg" class="img-fluid rounded-4 shadow"></div>
-      <div class="col-4 col-md-2" data-aos="zoom-in"><img src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2026/01/Biru-Kuning-3D-Apa-Kalian-Tahu-Konten-Cerita-Instagram.jpg" class="img-fluid rounded-4 shadow"></div>
-    </div>
-  </div>
-  
-</section>
 
 
 <!-- Lokasi -->
-<section id="location" class="bg-light">
+<section id="location">
   <div class="container">
     <div class="text-center mb-5" data-aos="fade-up">
       <h2 class="fw-bold">Lokasi Kantor</h2>
@@ -779,6 +841,19 @@
       </div>
     </div>
   </div>
+</section>
+
+<!-- Informasi -->
+<section id="partner" class="bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4" data-aos="fade-up">Informasi Sosial Media</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-4 col-md-2" data-aos="zoom-in"><img src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2026/01/Biru-Putih-Modern-Memulai-Bisnis-Instagram-Post-Carousel.jpg" class="img-fluid rounded-4 shadow"></div>
+      <div class="col-4 col-md-2" data-aos="zoom-in"><img src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-29-at-12.06.57.jpeg" class="img-fluid rounded-4 shadow"></div>
+      <div class="col-4 col-md-2" data-aos="zoom-in"><img src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2026/01/Biru-Kuning-3D-Apa-Kalian-Tahu-Konten-Cerita-Instagram.jpg" class="img-fluid rounded-4 shadow"></div>
+    </div>
+  </div>
+  
 </section>
 
 <!-- CTA -->
