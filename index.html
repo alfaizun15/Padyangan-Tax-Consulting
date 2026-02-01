@@ -52,160 +52,106 @@
     .navbar-brand img { height: 42px; }
 
     /* Hero */
-    .hero {
+   .hero-new {
   min-height: 100vh;
-  background: linear-gradient(
-    135deg,
-    #081a2f 0%,
-    #0b3c6f 45%,
-    #0a2540 100%
-  );
-  color: #fff;
   display: flex;
   align-items: center;
-  padding-top: 90px;
-  overflow: hidden;
-}
-
-/* TITLE */
-.hero h1 {
-  font-size: 44px;
-  line-height: 1.25;
-  font-weight: 700;
-}
-
-.hero h1 span {
-  color: #ffd43b;
-}
-
-/* TEXT */
-.hero p {
-  font-size: 17px;
-  line-height: 1.75;
-  color: rgba(255,255,255,.85);
-  max-width: 520px;
-}
-
-/* IMAGE */
-.hero-image img {
-  max-height: 560px;
-  animation: heroFloat 7s ease-in-out infinite;
-  will-change: transform;
-}
-
-/* LOGO FLOAT */
-.hero-logo {
-  background: rgba(255,255,255,.92);
-  padding: 18px 22px;
-  border-radius: 14px;
-  color: #000;
-  pointer-events: none;
-  box-shadow: 0 10px 30px rgba(0,0,0,.15);
-}
-
-/* FLOAT ANIMATION */
-@keyframes heroFloat {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-  100% { transform: translateY(0); }
-}
-
-/* MOBILE FIX */
-@media (max-width: 768px) {
-  .hero {
-    padding-top: 80px;
-    min-height: auto;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .hero p {
-    font-size: 15.5px;
-  }
-
-  .hero-image img {
-    max-height: 320px;
-    animation-duration: 9s;
-  }
-}
-
-.hero-eyebrow {
-  display: inline-block;
-  font-size: 13px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,.65);
-  margin-bottom: 14px;
-}
-
-.hero-title {
-  font-size: 46px;
-  line-height: 1.2;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.hero-desc {
-  font-size: 17px;
-  line-height: 1.75;
-  color: rgba(255,255,255,.85);
-  max-width: 520px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 14px;
-  margin-top: 32px;
-}
-
-/* buttons */
-.hero-btn-primary {
-  background: #ffd43b;
-  color: #111;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 600;
-}
-
-.hero-btn-secondary {
-  border: 1px solid rgba(255,255,255,.4);
+  background:
+    radial-gradient(circle at top left, rgba(13,110,253,.12), transparent 45%),
+    linear-gradient(135deg, #071a2f 0%, #0b2f55 100%);
   color: #fff;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 500;
+  padding: 100px 0 80px;
 }
 
-.hero-btn-secondary:hover {
-  background: rgba(255,255,255,.08);
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 30px;
-  }
-
-  .hero-desc {
-    font-size: 15.5px;
-  }
-
-  .hero-actions {
-    flex-direction: column;
-  }
-}
-
-.hero-eyebrow {
+/* badge */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 13px;
   letter-spacing: .08em;
   text-transform: uppercase;
   color: rgba(255,255,255,.7);
+  margin-bottom: 22px;
 }
 
-.hero-eyebrow i {
+.hero-badge i {
   color: #ffd43b;
   font-size: 14px;
+}
+
+/* heading */
+.hero-heading {
+  font-size: 46px;
+  line-height: 1.18;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.hero-heading span {
+  color: #ffd43b;
+}
+
+/* text */
+.hero-text {
+  font-size: 17px;
+  line-height: 1.75;
+  color: rgba(255,255,255,.85);
+  max-width: 520px;
+}
+
+/* CTA */
+.hero-cta {
+  margin-top: 34px;
+}
+
+.btn-primary-soft {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.35);
+  padding: 14px 34px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all .3s ease;
+}
+
+.btn-primary-soft:hover {
+  background: rgba(255,255,255,.08);
+  transform: translateY(-2px);
+}
+
+/* visual */
+.hero-visual img {
+  max-width: 520px;
+  animation: heroFloat 8s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes heroFloat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero-new {
+    min-height: auto;
+    padding: 80px 0 60px;
+  }
+
+  .hero-heading {
+    font-size: 30px;
+  }
+
+  .hero-text {
+    font-size: 15.5px;
+  }
+
+  .hero-visual img {
+    max-width: 320px;
+    animation-duration: 10s;
+  }
 }
 
 
@@ -484,53 +430,60 @@
 </nav>
 
 <!-- Hero -->
-<section class="hero" id="home">
+<section class="hero-new" id="home">
   <div class="container">
-    <div class="row align-items-center gy-4">
+    <div class="row align-items-center gy-5">
 
       <!-- TEXT -->
       <div class="col-12 col-md-6"
-           data-aos="fade-right"
+           data-aos="fade-up"
            data-aos-duration="900">
 
-        <!-- eyebrow + icon -->
-        <div class="hero-eyebrow d-flex align-items-center mb-3">
-          <i class="fa-solid fa-shield-halved me-2"></i>
+        <div class="hero-badge">
+          <i class="fa-solid fa-scale-balanced"></i>
           <span>Tax & Business Consulting</span>
         </div>
 
-        <h1 class="fw-bold mb-3">
-          Solusi Terpercaya untuk<br>
-          <span>Pajak & Manajemen</span> Bisnis Anda
+        <h1 class="hero-heading">
+          Pendampingan Pajak<br>
+          dan Manajemen Bisnis<br>
+          <span>yang Terpercaya</span>
         </h1>
 
-        <p class="mb-4">
-          Pendampingan profesional dalam pengelolaan perpajakan,
-          kepatuhan regulasi, serta pengambilan keputusan strategis
-          bagi keberlanjutan bisnis Anda.
+        <p class="hero-text">
+          Kami membantu perusahaan memastikan kepatuhan perpajakan,
+          mengelola risiko, dan mengambil keputusan strategis secara
+          profesional sesuai regulasi di Indonesia.
         </p>
 
-        <a href="#contact" class="btn btn-warning btn-lg px-4">
-          Konsultasi Sekarang
-        </a>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary-soft">
+            Konsultasi Profesional
+          </a>
+        </div>
 
       </div>
 
-      <!-- IMAGE -->
-      <div class="col-12 col-md-6 text-center hero-image"
+      <!-- VISUAL -->
+      <div class="col-12 col-md-6 text-center"
            data-aos="fade-left"
            data-aos-duration="900">
-        <img
-          src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2019/03/chart-service.png"
-          alt="Professional Tax Consulting"
-          class="img-fluid"
-          loading="lazy"
-        >
+
+        <div class="hero-visual">
+          <img
+            src="https://www.konsultanpajakpadyangan.com/wp-content/uploads/2019/03/chart-service.png"
+            alt="Professional Tax Consulting"
+            class="img-fluid"
+            loading="lazy"
+          >
+        </div>
+
       </div>
 
     </div>
   </div>
 </section>
+
 
 
 
